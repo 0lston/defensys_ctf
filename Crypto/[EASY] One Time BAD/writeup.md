@@ -10,6 +10,6 @@ xor = lambda a,b: bytes([b1 ^ b2 for b1, b2 in zip(a,b*(len(a)//len(b)))])
 with open("output.txt","r") as f:
   enc = bytes.fromhex(f.read())
 known_part = b"DEFENSYS{}"
-key = xor(enc[:10],known_part)
+key = xor(enc[:9]+enc[-1:],known_part)
 print(xor(enc,key))
 ```
