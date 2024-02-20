@@ -1,0 +1,6 @@
+The attacker attempted to deploy a trojan obtained from a command-and-control (C2) server onto the victim's system. Fortunately, Windows Defender intercepted this malicious activity and prevented its execution, using the logs get the trojan executable name
+
+Flag Format : DEFENSYS{trojanName.exe}
+FlagExemple : DEFENSYS{malicious.exe}
+
+Author: Sayonara
