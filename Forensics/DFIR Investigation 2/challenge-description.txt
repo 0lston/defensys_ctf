@@ -1,0 +1,6 @@
+the attacker created a new user and add it to a localgroup as a method of persistence, from logs retrieve the name of the user created and the name of the localgroup (in lowercase).
+
+Flag Format : DEFENSYS{username_localgroup}
+Flag Exemple : DEFENSYS{ismail_guests}
+
+Author: Sayonara
