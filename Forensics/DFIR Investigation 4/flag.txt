@@ -1,0 +1,1 @@
+DEFENSYS{hack_persist.exe}
