@@ -1,0 +1,6 @@
+The attacker has attempted to implement an alternative persistence mechanism by deploying a malicious auto-start service. get the ServiceName from the logs, if the service name is found to be "WarDaemon" it should be converted to lowercase, resulting in the flag DEFENSYS{wardaemon}
+
+Flag Format : DEFENSYS{servicename}
+Flag Exemple: DEFENSYS{wardaemon}
+
+Author: Sayonara
