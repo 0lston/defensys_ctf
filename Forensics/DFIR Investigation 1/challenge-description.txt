@@ -1,0 +1,6 @@
+one of our company machine was compromised. we suspect that the attacker got foothold from bruteforcing rdp credentials. from windows event logs retrive the attacker ip, successful logon date, number of failed attempts.
+
+Flag Format : DEFENSYS{attackerIP_HH:MM:SS_numberOfFailedAttempts} 
+Flag Exemple : DEFENSYS{10.0.0.1_16:05:57_19}
+
+Author: Sayonara
