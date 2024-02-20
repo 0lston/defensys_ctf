@@ -1,4 +1,4 @@
-one of our company machine was compromised. we suspect that the attacker got foothold from bruteforcing rdp credentials. from windows event logs retrive the attacker ip, successful logon date, number of failed attempts.
+one of our company machine was compromised. we suspect that the attacker got foothold from bruteforcing rdp credentials. from windows event logs retrive the attacker ip, successful logon date, number of failed attempts. note that in the logontime for exemple 4:23:57 PM should be 16:23:57
 
 Flag Format : DEFENSYS{attackerIP_HH:MM:SS_numberOfFailedAttempts} 
 Flag Exemple : DEFENSYS{10.0.0.1_16:05:57_19}
