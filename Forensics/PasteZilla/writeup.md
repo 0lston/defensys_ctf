@@ -99,7 +99,7 @@ Total History              : 19
 
 the last url is a pastebin url `https://pastebin.com/HRhfxB9f` and we can see in the title it's asking us if we can retrieve the flag from the pastebin, so that slightly confirms that the flag is in this paste, let's navigate to it
 
-![image](https://ibb.co/V9hVcNZ)
+[![image.png](https://i.postimg.cc/XNwxhbHH/image.png)](https://postimg.cc/5j2wYZML)
 
 so we need a password to unlock the paste, in the description of the challenge it says that the password of the paste is the password of the pastebin account so we have to extract all the saved passwords in the firefox browser.
 
@@ -164,7 +164,8 @@ Password: 'sayonarasayonara'
 
 so the password is `sayonarasayonara` let's use this password to unlock the paste and we will get the flag
 
-![[Pasted image 20240220094932.png]]
+[![image.png](https://i.postimg.cc/VkMN9KLC/image.png)](https://postimg.cc/ZWbZ4FNb)
+
 ## Flag : 
 
 ```
