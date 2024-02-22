@@ -1,0 +1,26 @@
+# Use a base image with necessary tools
+FROM ubuntu:latest
+
+# Set working directory
+WORKDIR /app
+
+# Copy the C source file and flag file into the container
+COPY rop.c flag.txt ./
+
+# Set file permissions for flag.txt
+RUN chmod 400 flag.txt
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y gcc socat
+RUN useradd ctf
+
+# Compile the C program with stack protection enabled
+RUN gcc rop.c -static -no-pie -fno-stack-protector -o rop
+
+# Expose port 8000 using socat
+EXPOSE 8000
+USER ctf
+CMD socat TCP-LISTEN:8000,reuseaddr,fork EXEC:"./rop"
+
+#sudo docker build -t rop .
+#sudo docker run -d -p 8000:8000 rop
