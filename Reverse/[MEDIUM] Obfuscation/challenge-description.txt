@@ -1,0 +1,3 @@
+how the hell is this code being executed its all hex but somehow it asks for the password can you recover the correct password. note the password is the flag
+
+Author: Sayonara
