@@ -1,3 +1,0 @@
-the flag is inside the encrypted PNG image. can you recover it ?
-
-Author: Sayonara
