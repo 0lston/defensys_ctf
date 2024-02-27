@@ -11,14 +11,14 @@ so this was my contribution to the DEFENSYS 2024 CTF, and i created a web+crypto
 
 
 ## the solution
-![Alt text](web/KrySS/image1.png?raw=true "Title")
+![Alt text](blob/main/web/KrySS/solution/image1.png "Title")
 
 in the / route we got this page and a button that should give us a cookie, and when click on it we got the following :
-![Alt text](web/KrySS/image2.png?raw=true "Title")
+![Alt text](blob/main/web/KrySS/solution/image2.png?raw=true "Title")
 
 and its a unique userId (we will see later what this is used for)
 
-![Alt text](web/KrySS/image3.png?raw=true "Title")
+![Alt text](blob/main/web/KrySS/solution/image3.png?raw=true "Title")
 
 and by looking at the cookies in devtools we see that we successfully got one, but what can we do with it, lets read the code and see
 
@@ -138,5 +138,5 @@ url encode this XSS payload using any online urlencoder then put it in the `msg`
 * submit that url to the admin bot
 * and then get the flag from the webhook
 
-![Alt text](web/KrySS/image4.png?raw=true "Title")
+![Alt text](blob/main/web/KrySS/solution/image4.png?raw=true "Title")
 

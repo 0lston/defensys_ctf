@@ -9,18 +9,18 @@ Try to be admin if you can
 in this challenge we are not provided with the source code
 when visiting the / route we got a login panel
 entering `admin` as a username will return username too short
-![[web/NotSecure/Solution/image1.png]]
+![[blob/main/web/NotSecure/Solution/image1.png]]
 
 so trying a longer username will redirect us to `/flag`
 
-![[web/NotSecure/Solution/image2.png]]
+![[blob/main/web/NotSecure/Solution/image2.png]]
 
 by checking the devtools we will see a token cookie that looks like a jwt
 
-![[web/NotSecure/Solution/image3.png]]
+![[blob/main/web/NotSecure/Solution/image3.png]]
 
 and indeed its a jwt token 
-![[web/NotSecure/Solution/image4.png]]
+![[blob/main/web/NotSecure/Solution/image4.png]]
 (image from http://jwt.io)
 
 we see that the signing algorithm is HS256, so we can try to bruteforce it using `jhon the ripper`
