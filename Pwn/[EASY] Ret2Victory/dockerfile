@@ -1,26 +1,12 @@
-# Use a base image with necessary tools
-FROM ubuntu:latest
+FROM pwn.red/jail
 
-# Set working directory
-WORKDIR /app
+COPY --from=ubuntu:22.04 / /srv
+COPY ret2victory /srv/app/run
+COPY flag.txt /srv/app/flag.txt
+RUN chmod 755 /srv/app/run
 
-# Copy the C source file and flag file into the container
-COPY ret2victory.c flag.txt ./
-
-# Set file permissions for flag.txt
-RUN chmod 400 flag.txt
-
-# Install necessary packages
-RUN apt-get update && apt-get install -y gcc socat
-RUN useradd ctf
-
-# Compile the C program
-RUN gcc ret2victory.c -no-pie -fno-stack-protector -o ret2victory
-
-# Expose port 8000 using socat
-EXPOSE 8000
-USER ctf
-CMD socat TCP-LISTEN:8000,reuseaddr,fork EXEC:"./ret2victory"
+# Set the JAIL_PORT environment variable to 9000
+ENV JAIL_PORT 9100
 
 #sudo docker build -t ret2victory
-#sudo docker run -d -p 8000:8000 ret2victory
+#sudo docker run -d -p 9100:9100 ret2victory
