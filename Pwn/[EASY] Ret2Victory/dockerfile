@@ -6,7 +6,7 @@ COPY flag.txt /srv/app/flag.txt
 RUN chmod 755 /srv/app/run
 
 # Set the JAIL_PORT environment variable to 9000
-ENV JAIL_PORT 9100
+ENV JAIL_PORT 9000
 
-#sudo docker build -t ret2victory
-#sudo docker run -d -p 9100:9100 ret2victory
+#sudo docker build -t victory
+#sudo docker run -d -p 9000:9000 --privileged ret2victory
