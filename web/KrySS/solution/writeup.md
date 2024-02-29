@@ -13,7 +13,7 @@ so this was my contribution to the DEFENSYS 2024 CTF, and i created a web+crypto
 ## the solution
 ![Alt text](image1.png "Title")
 
-in the / route we got this page and a button that should give us a cookie, and when click on it we got the following :
+in the / route we got this page and a button that should give us a cookie, and when click on it we got the following  :
 ![Alt text](image2.png?raw=true "Title")
 
 and its a unique userId (we will see later what this is used for)
