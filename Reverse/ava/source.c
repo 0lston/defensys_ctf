@@ -54,9 +54,9 @@ void execute_page(char *ram){
 	for(GP=0;;){
 		/* FOR DEBUG ONLY REMOVE IT FOR CHALL */
 		
-		puts("----------[DEBUG]------------");
+		/*puts("----------[DEBUG]------------");
 		printf("[CMX=%p][SMP=%p][AMX=%p][RNA=%p][GP=%p]\n", CMX, SMP, AMX, RNA, GP);
-		for(int i=0;i!=SMP+1;i++) printf("[STACK %d = %d]\n",i, stack[i]);
+		for(int i=0;i!=SMP+1;i++) printf("[STACK %d = %d]\n",i, stack[i]); */
 		
 
 		/* ----------------------------------- */
