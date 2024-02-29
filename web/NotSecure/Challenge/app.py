@@ -41,7 +41,7 @@ def verify_jwt(token, alg):
 def index():
     if request.args.get('username') and request.args.get('password'):
         if len(request.args.get('username')) < 10:
-            return render_template('index.html', error='Username too short')
+            return render_template('index.html', error='Username too short (should not be less than 10)')
         username = request.args.get('username')
         password = request.args.get('password')
         if username == "admin":
