@@ -1,3 +1,5 @@
+the challenge description tell us to get the flag from the root directory so let's list all the root directory file using this command
+
 ```
 ls /
 ```
