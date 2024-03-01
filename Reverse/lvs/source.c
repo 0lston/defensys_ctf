@@ -19,7 +19,7 @@ int fail(char *svtr, int TNTL){
 	int ok=1;
 	for(int i = 0;i != l;i++){
 		//s = (s == 35) ? 0 : s++;
-		printf("[l=%d] checking %d if is %d xored by %d : [%d ^ %d]\n", i, (int)svtr[i], (flag[i]^keys[s]), keys[s], flag[i], keys[s]);
+		// printf("[l=%d] checking %d if is %d xored by %d : [%d ^ %d]\n", i, (int)svtr[i], (flag[i]^keys[s]), keys[s], flag[i], keys[s]);
 		if((int)svtr[i] == (flag[i]^keys[s])) ok;
 		else break;	
 		//s = (s == 35) ? 0 : s++;
