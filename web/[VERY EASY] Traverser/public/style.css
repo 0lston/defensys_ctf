@@ -1,0 +1,19 @@
+body {
+  color: white;
+  text-align: center;
+}
+body {
+  background-image: url("?path=assets/background.gif");
+}
+h2{
+  font-family: 'Comic Sans MS'
+}
+p#about{
+  font-family: monospace;
+  font-size: 15px"
+}
+/* #tux1 {
+  position: absolute;
+  top: 5em;
+  left: -100px;
+} */
