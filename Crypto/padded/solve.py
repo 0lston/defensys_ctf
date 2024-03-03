@@ -8,7 +8,9 @@ padded = pad(MESSAGE, BLOCK_SIZE)
 data_blocks = [padded[i:i+BLOCK_SIZE] for i in range(0, len(padded), BLOCK_SIZE)]
 
 # Spawn the process
-p = process('./chall.py')
+#p = process('./chall.py')
+
+p = remote('127.0.0.1', 9998 )
 
 def strxor(str1, str2):
     return bytes([c1 ^ c2 for c1, c2 in zip(str1, str2)])
