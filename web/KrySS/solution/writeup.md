@@ -13,7 +13,7 @@ so this was my contribution to the DEFENSYS 2024 CTF, and i created a web+crypto
 ## the solution
 ![Alt text](image1.png "Title")
 
-in the / route we got this page and a button that should give us a cookie, and when click on it we got the following :
+in the / route we got this page and a button that should give us a cookie, and when click on it we got the following  :
 ![Alt text](image2.png?raw=true "Title")
 
 and its a unique userId (we will see later what this is used for)
@@ -96,7 +96,7 @@ so the goal of the challenge is to predict the next nonce random value
 
 ### Predicting the nonce
 
-the way how the nonce is generated is by mapping each user to a `Random` object so each user will have a unique random sequence but can we predict each users sequence, if the `Random` use a predictable PRNG we can predict the n-th `nonce` by getting all n-1 `nonce`s, and fortunately the `Random` object uses a predictable PRNG which is : `Mersenne Twister`
+the way how the nonce is generated is by mapping each user to a `Random` object so each user will have a unique random sequence but how can we predict each user's sequence ? if the `Random` use a predictable PRNG we can predict the n-th `nonce` by getting all n-1 `nonce`s, and fortunately the `Random` object uses a predictable PRNG which is : `Mersenne Twister`
 
 resource if you wanna understand the Mersenne Twister PRNG deeper: 
 * https://cryptopals.com/sets/3/challenges/23
@@ -106,7 +106,7 @@ but we can use a tool for that:
 * https://github.com/tna0y/Python-random-module-cracker: and it requires 624 random value to predict the next one so we will have to collect 624 `nonce`
 
 ### Where is the flag ?
-by looking at the bot.py source code of the bot admin we will notice that this is a headless chrome browser that will visit a url, and it puts the flag in cookies but those cookies will be accessible only when using the challenges domain
+by looking at the bot.py source code of the bot admin we will notice that this is a headless chrome browser that will visit a url, and it puts the flag in cookies but those cookies will be accessible only when using the challenge's domain
 
 ## Final solution
 

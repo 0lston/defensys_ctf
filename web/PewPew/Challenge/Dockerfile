@@ -6,8 +6,12 @@ RUN apt-get update && \
 
 WORKDIR /app
 COPY . /app
+# Set file permissions for flag.txt
+RUN chmod 444 /app/flag.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
-EXPOSE 8080
+RUN useradd ctf
+USER ctf
+EXPOSE 1337
 SHELL ["source /bin/bash", "-c"]
 ENV PATH=""
 CMD ["/usr/bin/python3", "app.py"]
