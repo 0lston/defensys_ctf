@@ -24,6 +24,14 @@ and almost all of them work
 
 ![image](https://github.com/0lston/defensys_ctf/assets/97733918/f84b8591-cce8-44eb-97d2-f92376e37476)
 
+### other solution : 
+
+```bash
+base64 /flag.txt | base64 -d
+```
+
+[![image.png](https://i.postimg.cc/xjWy5b22/image.png)](https://postimg.cc/XXkC7qqH)
+
 ## Flag : 
 ```
 DEFENSYS{bl4ck_l1s7ing_15_n0t_g00d_4nyways}
