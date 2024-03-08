@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""
+author: fren (0lston)
+"""
 import secrets
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
