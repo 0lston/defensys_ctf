@@ -1,1 +1,0 @@
-flag = b"DEFENSYS{h33d_my_w0rd5._1_4m_l4771c3._bl4d3_0f_cryp74n4ly515._4nd_1_h4v3_n3v3r_kn0wn_d3f347!_ShoRyuken}"
