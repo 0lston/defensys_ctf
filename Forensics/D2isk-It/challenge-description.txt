@@ -1,0 +1,4 @@
+in the attached file you have a disk image which you must analyze to get the flag :)
+
+Author:
+Medr4m And Wabdlox
